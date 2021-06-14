@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>Ejercicio cuadrados</title>
+   </head>
+   <body>     
+        <div class="contenedor">
+            <div class="cuadrado rojo" onclick="cambiarFondo('#3DEBD3')"></div>
+            <div class="cuadrado verde" onclick="cambiarFondo('#404EF5')"></div>
+            <div class="cuadrado gris" onclick="cambiarFondo('#F5CF40')"></div>
+            <div class="cuadrado rosa" onclick="cambiarFondo('#ED9145')"></div>
+        </div>
+        <style>
+            .contenedor {
+                display: flex;
+            }
+
+            .cuadrado {
+                height: 100px;
+                width: 100px;
+            }
+
+            .rojo {
+                background-color: red;
+            }
+
+            .verde {
+                background-color: green;
+            }
+
+            .gris {
+                background-color: gray;
+            }
+
+            .rosa {
+                background-color: pink;
+            }
+        </style>
+        <script>
+            function cambiarFondo(color) {
+                document.querySelector('body').style.background = color;
+            }
+        </script>
+    </body>
+    </html>
